@@ -92,14 +92,17 @@ You can expand these files with new values as the system learns.
 > - Expand your tag CSVs with real-world, nuanced values for better accuracy.
 ---
 ##  FAQ
-**Q: Can I add my own tag categories?**
-A: Yes! Just add a new CSV in the `tags/` directory and update the code if you want special handling.
-**Q: How does the system learn new phrases?**
-A: When it encounters a meaningful phrase not in the CSV, it uses semantic similarity to assign it to a category, adds it to the CSV, and logs the event.
-**Q: What if the system makes a mistake?**
-A: You can manually edit the CSVs or logs to correct or remove any incorrect matches or learned phrases.
-**Q: How do I keep the system accurate?**
-A: Regularly run `python clean.py` and review the logs. Expand your CSVs with new, relevant values as needed.
+𝘘: 𝘊𝘢𝘯 𝘐 𝘢𝘥𝘥 𝘮𝘺 𝘰𝘸𝘯 𝘵𝘢𝘨 𝘤𝘢𝘵𝘦𝘨𝘰𝘳𝘪𝘦𝘴? 
+𝘈: 𝘠𝘦𝘴! 𝘑𝘶𝘴𝘵 𝘢𝘥𝘥 𝘢 𝘯𝘦𝘸 𝘊𝘚𝘝 𝘪𝘯 𝘵𝘩𝘦 𝘵𝘢𝘨𝘴/ 𝘥𝘪𝘳𝘦𝘤𝘵𝘰𝘳𝘺 𝘢𝘯𝘥 𝘶𝘱𝘥𝘢𝘵𝘦 𝘵𝘩𝘦 𝘤𝘰𝘥𝘦 𝘪𝘧 𝘺𝘰𝘶 𝘸𝘢𝘯𝘵 𝘴𝘱𝘦𝘤𝘪𝘢𝘭 𝘩𝘢𝘯𝘥𝘭𝘪𝘯𝘨. 
+
+𝘘: 𝘏𝘰𝘸 𝘥𝘰𝘦𝘴 𝘵𝘩𝘦 𝘴𝘺𝘴𝘵𝘦𝘮 𝘭𝘦𝘢𝘳𝘯 𝘯𝘦𝘸 𝘱𝘩𝘳𝘢𝘴𝘦𝘴? 
+𝘈: 𝘞𝘩𝘦𝘯 𝘪𝘵 𝘦𝘯𝘤𝘰𝘶𝘯𝘵𝘦𝘳𝘴 𝘢 𝘮𝘦𝘢𝘯𝘪𝘯𝘨𝘧𝘶𝘭 𝘱𝘩𝘳𝘢𝘴𝘦 𝘯𝘰𝘵 𝘪𝘯 𝘵𝘩𝘦 𝘊𝘚𝘝, 𝘪𝘵 𝘶𝘴𝘦𝘴 𝘴𝘦𝘮𝘢𝘯𝘵𝘪𝘤 𝘴𝘪𝘮𝘪𝘭𝘢𝘳𝘪𝘵𝘺 𝘵𝘰 𝘢𝘴𝘴𝘪𝘨𝘯 𝘪𝘵 𝘵𝘰 𝘢 𝘤𝘢𝘵𝘦𝘨𝘰𝘳𝘺, 𝘢𝘥𝘥𝘴 𝘪𝘵 𝘵𝘰 𝘵𝘩𝘦 𝘊𝘚𝘝, 𝘢𝘯𝘥 𝘭𝘰𝘨𝘴 𝘵𝘩𝘦 𝘦𝘷𝘦𝘯𝘵. 
+
+𝘘: 𝘞𝘩𝘢𝘵 𝘪𝘧 𝘵𝘩𝘦 𝘴𝘺𝘴𝘵𝘦𝘮 𝘮𝘢𝘬𝘦𝘴 𝘢 𝘮𝘪𝘴𝘵𝘢𝘬𝘦? 
+𝘈: 𝘠𝘰𝘶 𝘤𝘢𝘯 𝘮𝘢𝘯𝘶𝘢𝘭𝘭𝘺 𝘦𝘥𝘪𝘵 𝘵𝘩𝘦 𝘊𝘚𝘝𝘴 𝘰𝘳 𝘭𝘰𝘨𝘴 𝘵𝘰 𝘤𝘰𝘳𝘳𝘦𝘤𝘵 𝘰𝘳 𝘳𝘦𝘮𝘰𝘷𝘦 𝘢𝘯𝘺 𝘪𝘯𝘤𝘰𝘳𝘳𝘦𝘤𝘵 𝘮𝘢𝘵𝘤𝘩𝘦𝘴 𝘰𝘳 𝘭𝘦𝘢𝘳𝘯𝘦𝘥 𝘱𝘩𝘳𝘢𝘴𝘦𝘴. 
+
+𝘘: 𝘏𝘰𝘸 𝘥𝘰 𝘐 𝘬𝘦𝘦𝘱 𝘵𝘩𝘦 𝘴𝘺𝘴𝘵𝘦𝘮 𝘢𝘤𝘤𝘶𝘳𝘢𝘵𝘦? 
+𝘈: 𝘙𝘦𝘨𝘶𝘭𝘢𝘳𝘭𝘺 𝘳𝘶𝘯 𝘱𝘺𝘵𝘩𝘰𝘯 𝘤𝘭𝘦𝘢𝘯.𝘱𝘺 𝘢𝘯𝘥 𝘳𝘦𝘷𝘪𝘦𝘸 𝘵𝘩𝘦 𝘭𝘰𝘨𝘴. 𝘌𝘹𝘱𝘢𝘯𝘥 𝘺𝘰𝘶𝘳 𝘊𝘚𝘝𝘴 𝘸𝘪𝘵𝘩 𝘯𝘦𝘸, 𝘳𝘦𝘭𝘦𝘷𝘢𝘯𝘵 𝘷𝘢𝘭𝘶𝘦𝘴 𝘢𝘴 𝘯𝘦𝘦𝘥𝘦𝘥.
 ---
 ##  Troubleshooting
 - If you see generic or incomplete matches, run `python clean.py` to clean your CSVs.
